@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+<main class="container">
+    <h1 class="text-center display-4">Inventario</h1>
+    <h2 class="display-5">Items</h2>
+    
+    <a class="btn btn-success" href="./create">Agregar producto</a>
+
+    {{ for product in products: }}
+    <div>
+        <p>{{ =product.product_name }}</p>
+    </div>
+    {{ pass }}
+</main>
